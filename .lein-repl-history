@@ -1,0 +1,8 @@
+(use 'lein.midje)
+quit
+(use 'midje.repl)
+(check-facts #(= (:exercise %) 1))
+(check-facts)
+(load-facts)
+(check-facts)
+(check-facts #(= (:exercise %) 1))
